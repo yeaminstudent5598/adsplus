@@ -1,0 +1,19 @@
+@font-face { font-family: "AP Hind Siliguri"; font-weight: 400; src: url("../fonts/HindSiliguri-Regular.ttf") format("truetype"); }
+@font-face { font-family: "AP Hind Siliguri"; font-weight: 600; src: url("../fonts/HindSiliguri-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "AP Hind Siliguri"; font-weight: 700; src: url("../fonts/HindSiliguri-Bold.ttf") format("truetype"); }
+@font-face { font-family: "AP Red Hat Display"; font-weight: 300 900; src: url("../fonts/RedHatDisplay-VF.ttf") format("truetype"); }
+body { width: 350px; margin: 0; padding: 14px; background: #0b1220; color: #e5e7eb; font: 13px "AP Red Hat Display", "AP Hind Siliguri", "Nirmala UI", system-ui, sans-serif; }
+h1 { font-size: 16px; margin: 0 0 10px; }
+h1 span { color: #64748b; font-weight: 400; font-size: 12px; }
+h2 { font-size: 13px; margin: 0 0 6px; color: #a3e635; }
+section { background: #0d1628; border: 1px solid #172340; border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+.toggle { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 13px; color: #e5e7eb; flex-direction: row; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: #94a3b8; margin-bottom: 6px; }
+.grid label { margin-bottom: 0; }
+input[type="number"], input[type="text"], input[type="password"] { background: #111a2e; border: 1px solid #1f2a44; color: #e5e7eb; border-radius: 6px; padding: 6px 8px; font-size: 13px; width: 100%; box-sizing: border-box; font-family: inherit; }
+.hint { font-size: 11px; color: #94a3b8; margin: 0 0 8px; }
+.actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+button { cursor: pointer; border: 0; border-radius: 8px; padding: 7px 12px; font-weight: 700; background: #a3e635; color: #0b1220; font-family: inherit; font-size: 12px; }
+button.ghost { background: #1f2a44; color: #e5e7eb; }
+.msg { margin-top: 6px; color: #a3e635; min-height: 16px; font-size: 12px; }
