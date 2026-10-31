@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "AdPulse BD",
+  "version": "1.5.0",
+  "description": "Meta Ad Library insights (modeled estimates) for Bangladesh ads: spend, orders, revenue, audience, store info.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "AdPulse BD"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/ads/library/*"
+      ],
+      "js": [
+        "src/fonts-data.js",
+        "src/estimator.js",
+        "src/campaigns.js",
+        "src/insights.js",
+        "src/parser.js",
+        "src/ui.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/panel.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
